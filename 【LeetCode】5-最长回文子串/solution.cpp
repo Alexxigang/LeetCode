@@ -13,9 +13,6 @@ public:
         if(s.size()<=0){
             return "";
         }
-        if(s.size()==1){
-            return s;
-        }
         int start=0,end=0;
         for(int i=0;i<s.size();i++){
             int Len1=expandAroundCenter(s,i,i);//以i为中心向外扩展判断是否为子串
