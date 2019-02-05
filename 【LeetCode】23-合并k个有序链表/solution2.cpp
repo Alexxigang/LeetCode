@@ -15,7 +15,7 @@ struct cmp{
 class Solution {
 public:
     ListNode* mergeKLists(vector<ListNode*>& lists) {
-        priority_queue<ListNode*,vector<ListNode*>,cmp > q;//优先级队列。队首数值为优先级最高
+        priority_queue<ListNode*,vector<ListNode*>,cmp > q;//优先级队列。队首数值为优先级最高，利用了最小堆的数据结构，会自动排好序
         for(int i=0;i<lists.size();i++){
             if(lists[i])q.push(lists[i]);
         }
