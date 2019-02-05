@@ -7,6 +7,7 @@
  * };
  */
 struct cmp{
+    //重载operator<的例子：返回true时，说明左边形参的优先级低于右边形参
     bool operator()(ListNode* l1,ListNode* l2){
         return l1->val>l2->val;
     }
