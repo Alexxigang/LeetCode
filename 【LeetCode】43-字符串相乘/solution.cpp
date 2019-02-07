@@ -7,6 +7,7 @@ public:
         vector<int> temp(n1+n2,0);
         for(int i=0;i<n1;i++){
             for(int j=0;j<n2;j++){
+                //这里temp计算两个数的相应位的乘积
                 temp[k-i-j]+=(num1[i]-'0')*(num2[j]-'0');
             }
         }
