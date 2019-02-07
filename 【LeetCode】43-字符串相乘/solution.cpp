@@ -17,8 +17,8 @@ public:
             temp[i]%=10;
         }
         int i=n1+n2-1;
-        while(temp[i]==0)i--;
-        if(i<0)return "0";
+        while(temp[i]==0)i--;//结果中需要去掉前导0
+        if(i<0)return "0";//还需要注意结果为0的情况
         while(i>=0){
             res.push_back(temp[i--]+'0');
         }
