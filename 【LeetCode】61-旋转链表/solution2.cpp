@@ -8,7 +8,7 @@
  */
 class Solution {
 /*
-解法二：直接将链表收尾相连，在往后走n - k % n个节点就到达新链表的头结点前一个点，这时断开链表即可
+解法二：直接将链表收尾相连，在往后走n - k % n个节点就到达新链表的头结点前一个点，这时断开链表即可，其实原理跟快慢指针是一样的
 */
 public:
     ListNode* rotateRight(ListNode* head, int k) {
