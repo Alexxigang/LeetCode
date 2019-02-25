@@ -21,12 +21,14 @@ public:
             slow=slow->next;
             fast=fast->next->next;
         }
+        //通过pre结点将原链表分成大小相同的两半
         pre->next=NULL;
         return Merge(sortList(head),sortList(slow));
     }
     
 private:
     ListNode* Merge(ListNode* L1,ListNode*L2){
+        //非递归合并
         ListNode* dummy=new ListNode(-1);
         ListNode* cur=dummy;
         
