@@ -39,6 +39,7 @@ public:
 private:
     int cap;
     list<pair<int,int>> l;
+    //HashMap的建立的是关键值key和缓存列表中的迭代器之间的映射
     unordered_map<int,list<pair<int,int>>::iterator> m;
 };
 
