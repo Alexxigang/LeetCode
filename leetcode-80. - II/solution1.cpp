@@ -1,4 +1,6 @@
 class Solution {
+//题解思路：利用两个指针从索引1开始遍历，判断j位置和前面一个位置的值是否相同，再判断相同次数是否超过2，如果未超过2，则将j上的值赋值给k上，k++后移，time
+//也+1，如果超过2，则k不动，j++后移；如果j位置和前面一个位置的值不相同，则将time赋值为1，并且将j上的值赋值给k上，k++后移
 public:
     int removeDuplicates(vector<int>& nums) {
         if(nums.size()<=2){
