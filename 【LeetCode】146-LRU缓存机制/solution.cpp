@@ -17,7 +17,7 @@ public:
     }
     
     int get(int key) {
-        auto iter=m.find(key);
+        auto iter=m.find(key);//这里的iter是整个map的迭代器，指向map的<key,value>的位置（value在这里是）
         if(iter==m.end())return -1;
         l.splice(l.begin(),l,iter->second);//将找到的key对应的key-value对移动至列表的首端
         return iter->second->second;//iter->second对应的是list，iter->second->second对应的则是list中的key对应的value
