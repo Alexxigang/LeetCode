@@ -33,7 +33,7 @@ public:
     
 private:
     int partition(vector<int> & nums,int left,int right){
-        int privot=nums[left],l=left+1,r=right;
+        int privot=nums[left],l=left+1,r=right;////这里起始点要从第二个开始
         while(l<=r){
             if(nums[l]<privot&&nums[r]>privot){
                 swap(nums[l++],nums[r--]);
