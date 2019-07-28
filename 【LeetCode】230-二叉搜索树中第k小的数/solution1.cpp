@@ -9,7 +9,7 @@
  */
 class Solution {
 /*
-非递归方式，利用cnt计数，栈来存储结点
+中序遍历思想，非递归方式，利用cnt计数，栈来存储结点
 */
 public:
     int kthSmallest(TreeNode* root, int k) {
