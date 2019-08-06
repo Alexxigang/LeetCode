@@ -51,7 +51,7 @@ noon    -->    #n#o#o#n#
 ![](https://raw.githubusercontent.com/grandyang/leetcode/master/img/manacher_2.png)
 对于 mx <= i 的情况，无法对 P[i] 做更多的假设，只能 P[i] = 1，然后再去匹配了。
 参见如下实现代码：
-`
+```
 #include <vector>
 #include <iostream>
 #include <string>
@@ -91,4 +91,4 @@ int main() {
     string s = "waabwswfd";
     cout << Manacher(s) << endl;
 }
-`
+```
