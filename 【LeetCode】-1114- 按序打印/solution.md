@@ -1,11 +1,13 @@
 ### 题目描述  
 我们提供了一个类：
-
+```
 public class Foo {
   public void one() { print("one"); }
   public void two() { print("two"); }
   public void three() { print("three"); }
 }
+
+```
 三个不同的线程将会共用一个 Foo 实例。
 
 线程 A 将会调用 one() 方法
